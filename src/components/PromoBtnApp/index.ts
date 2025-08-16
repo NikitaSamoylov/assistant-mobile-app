@@ -1,0 +1,1 @@
+export { PromoBtnApp } from './PromoBtnApp';

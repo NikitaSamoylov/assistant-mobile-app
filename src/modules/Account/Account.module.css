@@ -1,0 +1,124 @@
+.container {
+  padding-bottom: 104px;
+}
+
+.title {
+  padding: 0 0 16px 0;
+}
+
+.subTitle {
+  margin-bottom: 8px;
+}
+
+.list {
+  border-radius: 10px;
+  background-color: var(--input-background);
+  margin-bottom: 24px;
+}
+
+.itemContent {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.item {
+  padding: 13px;
+}
+
+.item:not(:first-child) {
+  border-top: 1px solid var(--divider-color);
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.btnsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 33px;
+}
+
+.exit,
+.remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--input-background);
+  border-radius: 10px;
+  width: 100%;
+  padding: 13px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.iconUserName {
+  color: #16add7;
+}
+
+.iconUserEmail {
+  color: #1673d7;
+}
+
+.iconUserSubscr {
+  color: #16cad7;
+}
+
+.iconSupport {
+  color: #b27af2;
+}
+
+.iconStar {
+  color: #d7a316;
+}
+
+.iconPrivacy {
+  color: #4c63f3;
+}
+
+.iconVersion {
+  color: #4cb4f3;
+}
+
+.iconPush {
+  color: #ebc42f;
+}
+
+.subscriptionContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscriptionIcon {
+  font-size: 2.3rem;
+}
+
+.returnBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0 34px auto;
+}

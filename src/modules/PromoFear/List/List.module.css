@@ -1,0 +1,14 @@
+.list {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.listItem {
+  display: flex;
+  column-gap: 10px;
+  align-items: flex-start;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 7px;
+}

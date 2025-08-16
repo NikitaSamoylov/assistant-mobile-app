@@ -1,0 +1,12 @@
+.title {
+  width: 100wh !important;
+  padding: 25px 25px;
+  border-bottom: 1px solid;
+  border-color: var(--divider-color);
+  margin-bottom: 15px;
+}
+
+.returnBtn {
+  padding: 35px 0 45px 0;
+  margin-left: auto;
+}

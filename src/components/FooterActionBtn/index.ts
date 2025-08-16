@@ -1,0 +1,1 @@
+export { FooterActionBtn } from './FooterActionBtn';

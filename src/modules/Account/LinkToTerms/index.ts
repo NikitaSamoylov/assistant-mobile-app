@@ -1,0 +1,1 @@
+export { LinkToTerms } from './LinkToTerms';

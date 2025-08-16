@@ -1,0 +1,47 @@
+{
+  "name": "Мой дворецкий",
+  "short_name": "Мой дворецкий",
+  "theme_color": "#F5BB87",
+  "background_color": "#fbf8f0",
+  "start_url": "/",
+  "id": "assistant-pro",
+  "display": "standalone",
+  "description": "Ваш домашний помощник",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "logo192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "256x256",
+      "src": "logo256.png",
+      "type": "image/png"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screen_narrow.png",
+      "type": "image/png",
+      "sizes": "375x667",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screen_narrow_dark.png",
+      "type": "image/png",
+      "sizes": "375x667",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screen_1280.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+.tabHeader {
+  width: 100%;
+  height: 32px;
+  border-radius: 9px;
+  background-color: var(--input-background);
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.tabList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 1px;
+}
+
+.tabItem {
+  flex: 0.5;
+}
+
+.tabBtn {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  width: 100%;
+  height: 100%;
+  padding: 5px 8px;
+  border-radius: 7px;
+  color: grey;
+}
+
+.tabBtn_active {
+  background-color: var(--doc-panel-bg);
+  color: var(--body-color);
+}
+
+.tabsHeader {
+  margin-bottom: 32px;
+}

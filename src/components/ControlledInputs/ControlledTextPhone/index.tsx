@@ -1,0 +1,1 @@
+export { ControlledTextPhone } from './ControlledTextPhone';

@@ -1,0 +1,53 @@
+.title {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+/* form  */
+.fieldsList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--button-color-paper);
+  padding: 11px;
+  border-radius: 10px;
+  background-color: var(--button-bg-secondary);
+}
+
+.takePhotoBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.uploadedIcon {
+  font-size: 1.7rem;
+  margin-right: 5px;
+  color: var(--success-text-color);
+}
+
+.listItemBtn {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  align-items: center;
+  padding: 11px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.listItemBtnIcon {
+  font-size: 2.8rem;
+  color: var(--icon-default-color);
+}
+
+.camIcon {
+  font-size: 3.4rem;
+}

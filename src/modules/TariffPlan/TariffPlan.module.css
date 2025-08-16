@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 15px 0;
+}
+
+.returnBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0 0 0;
+}
+
+.wrapper {
+  margin-bottom: 55px;
+}

@@ -1,0 +1,50 @@
+.item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: space-between;
+    flex: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.itemTitle {
+    display: block;
+    font-size: 1.7rem;
+    color: var(--main-title-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon {
+    font-size: 1.6rem;
+    color: var(--button-color-primary);
+    margin-right: 3px;
+}
+
+.iconBtn {
+    margin-left: auto;
+}
+
+.editIcon {
+    font-size: 3rem;
+    color: var(--icon-default-color);
+}
+
+.undoIcon {
+    font-size: 3rem;
+    color: var(--error-color);
+}
+
+.wrapper {
+    padding: 17px 0;
+    border-bottom: 1px solid var(--divider-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}

@@ -1,0 +1,2 @@
+export type TTextFieldVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span';
+export type TTextFieldColors = 'error' | 'success' | 'default' | 'main' | 'subTitle' | 'contrastWhite' | 'caption' | 'checked' | 'title';

@@ -1,0 +1,48 @@
+.iconBtn {
+  font-size: 1.7rem;
+  color: var(--icon-default-color);
+}
+
+.iconBtnWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+.iconBtnBorder {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border: 2px solid;
+  border-color: transparent;
+  background-color: var(--icon-btn-bg);
+  border-radius: 50%;
+}
+
+/* product list btns  */
+.listItemBtnDelete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 11px 0 11px;
+  margin-bottom: 11px;
+  border-top: 7px solid var(--divider-color);
+}
+
+.listItemBtnIcon {
+  font-size: 2.8rem;
+  color: var(--icon-default-color);
+}
+
+.listItemBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.deleteListItemIcon {
+  color: var(--error-color) !important;
+}

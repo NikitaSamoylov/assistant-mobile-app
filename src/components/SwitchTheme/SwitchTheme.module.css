@@ -1,0 +1,14 @@
+.icon {
+  color: var(--icon-default-color);
+  font-size: 1.7rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.iconOnly {
+  font-size: 2.3rem !important;
+}

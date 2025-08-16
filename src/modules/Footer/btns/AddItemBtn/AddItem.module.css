@@ -1,0 +1,51 @@
+.title {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+/* form  */
+.fieldsList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.button {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--button-color-paper);
+  padding: 11px;
+  border-radius: 10px;
+  background-color: var(--button-bg-secondary);
+  margin-top: 20px;
+}
+
+.takePhotoBtn {
+  margin-left: auto;
+  /* padding: 11 11px 11px 11px; */
+  /* border-radius: 7px; */
+  /* background-color: var(--input-background); */
+  /* border: 1px solid var(--input-border-color); */
+}
+
+.uploadedIcon {
+  font-size: 1.7rem;
+  /* margin-right: 10px; */
+  color: var(--success-text-color);
+  /* transform: translateY(-1px); */
+  transform: translateY(3px);
+}
+
+.icon {
+  color: var(--icon-footer-color);
+}
+
+.camIcon {
+  font-size: 2.7rem;
+  transform: translateY(-3px);
+}
+
+.fieldItem {
+  flex: 1;
+}

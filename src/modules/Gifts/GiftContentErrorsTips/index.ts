@@ -1,0 +1,1 @@
+export { GiftsContent } from './GiftsContent';

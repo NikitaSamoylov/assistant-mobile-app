@@ -1,0 +1,16 @@
+.iconBtnWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+.iconBtnBorder {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border: 2px solid;
+  border-color: transparent;
+  background-color: var(--icon-btn-bg);
+  border-radius: 50%;
+}

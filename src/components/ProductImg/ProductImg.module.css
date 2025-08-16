@@ -1,0 +1,8 @@
+.img {
+  width: 59px;
+  height: 59px;
+  min-width: 59px;
+  border-radius: 10px;
+  background-color: var(--list-img-bg);
+  border: none;
+}

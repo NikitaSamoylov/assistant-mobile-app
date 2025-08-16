@@ -1,0 +1,1 @@
+export { GiftContentLifeHacks } from './GitContentLifeHacks';

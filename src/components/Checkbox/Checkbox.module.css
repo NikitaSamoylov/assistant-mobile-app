@@ -1,0 +1,17 @@
+.checkboxWrapper {
+  position: relative;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border-color);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: var(--checkbox-icon-color);
+}

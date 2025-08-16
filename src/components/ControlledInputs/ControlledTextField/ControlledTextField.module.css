@@ -1,0 +1,24 @@
+.text {
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 11px 31px 11px 11px;
+  background-color: var(--input-background);
+  color: var(--body-color);
+  border: 1px solid var(--input-border-color);
+  outline: none;
+  font-family: inherit;
+}
+
+.isCenter {
+  text-align: center;
+}
+
+.text::placeholder {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  color: var(--placeholder-color);
+  opacity: 60%;
+}

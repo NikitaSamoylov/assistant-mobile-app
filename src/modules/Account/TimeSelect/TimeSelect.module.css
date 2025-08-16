@@ -1,0 +1,33 @@
+.time {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.popup {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  border-radius: 10px;
+  padding: 15px;
+  height: 145px;
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 15px -4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 15px -4px rgba(34, 60, 80, 0.2);
+  overflow-y: auto;
+  background-color: var(--background-color);
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.isClosed {
+  transition: .3s;
+  transform: rotate(0deg);
+}
+
+.isOpened {
+  transform: rotate(180deg);
+  transition: .3s;
+}

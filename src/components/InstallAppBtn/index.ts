@@ -1,0 +1,1 @@
+export { InstallAppBtn } from './InstallAppBtn';

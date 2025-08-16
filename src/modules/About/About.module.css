@@ -1,0 +1,23 @@
+.promoWrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  height: 105vh;
+  /* margin-bottom: 30px; */
+}
+
+.iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.isMobileHeight {
+  /* height: 90%; */
+  height: 100%;
+}
+
+.isDesktopHeight {
+  height: 100%;
+}

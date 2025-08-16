@@ -1,0 +1,11 @@
+.step {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.stepImg {
+  display: block;
+  margin: 0 auto;
+}

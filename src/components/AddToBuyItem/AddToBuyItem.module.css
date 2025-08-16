@@ -1,0 +1,13 @@
+.listItemBtn {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  align-items: center;
+  padding: 11px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.listItemBtnIcon {
+  font-size: 2.8rem;
+  color: var(--icon-default-color);
+}

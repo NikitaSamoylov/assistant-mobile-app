@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Код подтверждения</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f2f2f7;
+      padding: 0;
+      color: #1d1d1f;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 10px auto;
+      width: 120px;
+      height: 110px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #cd5b53;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .code {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 8px;
+      padding: 15px 30px;
+      background-color: #f2f2f7;
+      border-radius: 8px;
+      border: 1px solid #d1d1d6;
+      margin-bottom: 30px;
+      font-family: monospace;
+    }
+
+    .blue-block {
+      background-color: #007aff;
+      width: 60%;
+      padding: 15px 0;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .blue-block p {
+      color: #ffffff;
+      font-size: 16px;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .validity-text {
+      font-size: 14px;
+      color: #8e8e93;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto 20px auto;
+      padding: 12px 0;
+      background-color: #007aff;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #8e8e93;
+    }
+
+    .title {
+      max-width: 250px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 36px;
+    }
+
+    .subtitle {
+      max-width: 273px;
+      line-height: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://cpjougnpchcjskbuyuyq.supabase.co/storage/v1/object/public/assistan-pro/project_default/Logo.png"
+      alt="Логотип" class="logo" />
+
+    <h1 class="title">Вход в приложение "Мой Дворецкий"</h1>
+    <p class="subtitle">Пожалуйста, введите 4-значный код для безопасного входа:</p>
+    <div class="code">{{CODE}}</div>
+    <p class="note">Код действует 15 минут</p>
+    <p class="footer">Если вы не запрашивали код - проигнорируйте это письмо</p>
+    <p class="footer">Если у вас есть вопросы обратитесь в службу поддержки</p>
+    <p class="footer">Письмо создано автоматически. Пожалуйста, не отвечайте на него</p>
+  </div>
+</body>
+
+</html>

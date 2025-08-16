@@ -1,0 +1,62 @@
+.actionBtn {
+  position: sticky; 
+  bottom: 0; /* отступ снизу, чтобы не накладывалась */
+  z-index: 999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 25px;
+  padding: 10px 0;
+  border-top: 1px solid var(--divider-color);
+  background-color: var(--background-color);
+}
+
+.mainInstallBtn {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+/* .mainInstallBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.installWrapper {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 25px;
+}
+
+.installBtn {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: rgb(26, 111, 238);
+  padding: 10px 10px;
+  border-radius: 25px;
+  font-family: inherit;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 7px;
+}
+
+.verified, .secured {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.verifiedIcon {
+  font-size: 2rem;
+  color: var(--button-color-primary);
+}
+
+.securedIcon {
+  font-size: 1.4rem;
+  color: var(--badge-bg);
+}

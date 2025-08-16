@@ -1,0 +1,1 @@
+export { DeleteProductItem } from './DeleteProductItem';

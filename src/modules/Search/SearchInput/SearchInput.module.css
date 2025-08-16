@@ -1,0 +1,55 @@
+.input {
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid var(--input-border-color);
+  padding: 7px 31px 7px 31px;
+  background-color: var(--input-background);
+  outline: none;
+  color: var(--body-color);
+}
+
+.inputWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.textFieldWrapper {
+  transition: '0.3s';
+  position: 'relative';
+}
+
+.input::placeholder {
+  font-size: var(--placeholder-size);
+  line-height: 2.2rem;
+  color: var(--placeholder-color);
+  opacity: 60%;
+}
+
+.label {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  z-index: 3;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 18px;
+  right: 5px;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+
+.fade {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}

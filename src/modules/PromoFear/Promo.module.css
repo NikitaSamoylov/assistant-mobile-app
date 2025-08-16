@@ -1,0 +1,33 @@
+.mainImg {
+  display: block;
+  margin: 25px auto;
+}
+
+.author {
+  display: block;
+  margin: 0 auto 7px auto;
+}
+
+.videoGuide {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.qrWrapper {
+  margin-bottom: 60px;
+}
+
+.qrImg {
+  display: block;
+  margin: 40px auto;
+}
+
+.policyInfoMobile {
+  border-top: 1px solid var(--divider-color);
+}
+
+.policyInfoDesktop {
+  padding: 5px;
+  border-top: 1px solid var(--divider-color);
+}

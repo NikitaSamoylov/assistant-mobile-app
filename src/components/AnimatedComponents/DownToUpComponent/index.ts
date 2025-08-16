@@ -1,0 +1,1 @@
+export { DownToUpComponent } from './DownToUpComponent';

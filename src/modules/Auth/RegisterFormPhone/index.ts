@@ -1,0 +1,1 @@
+export { RegisterFormPhone } from './RegisterFormPhone';

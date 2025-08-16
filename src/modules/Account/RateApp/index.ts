@@ -1,0 +1,1 @@
+export { RateApp } from './RateApp';

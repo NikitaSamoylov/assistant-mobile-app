@@ -1,0 +1,63 @@
+.title {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+}
+
+.subTitle {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+
+.body {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.underTitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+.span {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+/* colors  */
+
+.title {
+  color: var(--main-title-color) !important;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.main {
+  color: var(--body-color);
+}
+
+.subTitle {
+  color: var(--sub-title-color);
+}
+
+.contrastWhite {
+  color: var(--badge-color);
+}
+
+.caption {
+  color: var(--under-title-color);
+}
+
+.checked {
+  color: var(--main-title-color);
+}
+
+.success {
+  color: var(--success-text-color);
+}

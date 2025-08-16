@@ -1,0 +1,24 @@
+.header {
+  padding: 20px 0;
+  border-radius: 15px;
+  background-color: var(--background-color);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.logoContent {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.serviceBtns {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}

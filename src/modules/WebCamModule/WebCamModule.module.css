@@ -1,0 +1,81 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.cam {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: 430px;
+  object-fit: cover;
+  margin: 0 15px;
+}
+
+.camWrapper {
+  margin-top: 115px;
+  height: 100vh;
+}
+
+.returnBtn {
+  margin: 0 0 40px 25px;
+}
+
+.actionBtnWrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.actionBtnIcon {
+  font-size: 8rem;
+  color: var(--cam-icon-color);
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--cam-bg-color);
+}
+
+.acceptPhoto {
+  color: var(--success-text-color);
+}
+
+.btnsPreloader {
+  position: relative;
+  top: 3px;
+  margin: 0 30px;
+}
+
+/* popup  */
+.popupFullScreen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1004;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid;
+  border-color: var(--divider-color);
+}
+
+.item {
+  padding: 11px 16px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

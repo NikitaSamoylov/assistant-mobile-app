@@ -1,0 +1,12 @@
+.caption {
+  font-size: var(--footer-icon-descr-size);
+  line-height: 1.5rem;
+}
+
+.default {
+  color: var(--footer-icon-descr-color);
+}
+
+.isActive {
+  color: var(--icon-footer-color-active);
+}

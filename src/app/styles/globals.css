@@ -1,0 +1,87 @@
+@import './_variables.css';
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/libs/assets/fonts/SFProText-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/libs/assets/fonts/SFProText-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/libs/assets/fonts/SFProText-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('/libs/assets/fonts/SFProText-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera, Edge (на базе Chromium) */
+}
+
+html {
+  font-family: 'SFPro', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'SFPro', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  height: auto;
+  min-height: 100%;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 'inherit';
+  font-weight: 'inherit';
+  color: 'inherit';
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}

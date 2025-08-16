@@ -1,0 +1,16 @@
+.returnBtn {
+  width: 105px;
+  margin: 25px 0 34px auto;
+}
+
+/* form  */
+.fieldsList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.formBtn {
+  margin: 16px auto;
+  display: block;
+}

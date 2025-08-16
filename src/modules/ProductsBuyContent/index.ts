@@ -1,0 +1,1 @@
+export { ProductsBuyContent } from './ProductsBuyContent';

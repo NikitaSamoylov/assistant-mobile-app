@@ -1,0 +1,24 @@
+.title {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.accountIcon {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.cookIcon {
+  font-size: 2rem;
+  margin-right: 5px;
+  color: rgb(137, 94, 58);
+}
+
+.gift {
+  font-size: 2rem;
+  margin-right: 5px;
+  color: rgb(236, 61, 61);
+}

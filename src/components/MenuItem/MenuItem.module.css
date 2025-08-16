@@ -1,0 +1,10 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.icon {
+  font-size: 2rem;
+}

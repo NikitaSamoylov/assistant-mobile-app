@@ -1,0 +1,7 @@
+.icon {
+  color: var(--icon-footer-color);
+}
+
+.iconActive {
+  color: var(--icon-footer-color-active);
+}

@@ -1,0 +1,1 @@
+export { TariffPlanBtn } from './TariffPlan';

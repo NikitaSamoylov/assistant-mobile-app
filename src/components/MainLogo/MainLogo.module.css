@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.logoImg {
+  width: 48px;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.logo {
+  position: relative;
+  width: 48px;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.titleContainer {
+  text-align: left;
+  padding-top: 32px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--logo-title-color);
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.subTitle {
+  font-size: 1.4rem;
+  color: var(--logo-subtitle-color);
+  letter-spacing: 1px;
+}
