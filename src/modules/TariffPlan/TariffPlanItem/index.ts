@@ -1,1 +1,0 @@
-export { TariffPlanItem } from './TariffPlanItem';

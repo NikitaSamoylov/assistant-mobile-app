@@ -12,7 +12,6 @@ import personImg from './person.png';
 import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/lib/store/store';
-import { TariffesTitles } from '@/lib/types/tariffes';
 import { setNoInternetMsg } from '@/lib/store/features/noInternetSlice';
 import moment from 'moment';
 import { setAiRequestCount } from '@/lib/store/features/aiRequestsCountSlice';
@@ -23,12 +22,10 @@ export const Recipes = () => {
   const router = useRouter();
   const dispatch = useDispatch();
   const requestsCount = useSelector((state: RootState) => state.aiRequestCountSlice.aiRequestCount);
-  const userTariff = useSelector((state: RootState) => state.userSession.userSession?.tariff);
   const { isUserOnline } = useSelector((state: RootState) => state.isUserOnline);
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [showLimitMessage, setShowLimitMessage] = useState(false);
-  const [isTariffLimitMsg, setIsTariffLimitMsg] = useState(false);
 
   const handleOpen = () => {
     setIsPopupOpen(isPopupOpen => !isPopupOpen);
@@ -37,11 +34,6 @@ export const Recipes = () => {
   const handleRoute = () => {
     if (!isUserOnline) {
       dispatch(setNoInternetMsg(true));
-      return;
-    };
-
-    if (userTariff === TariffesTitles.BASE_TARIFF) {
-      setIsTariffLimitMsg(true);
       return;
     };
 
@@ -71,22 +63,9 @@ export const Recipes = () => {
     />
   );
 
-  const showTariffLimigMessage = (
-    <PopupNotification
-      title="Необходим тариф"
-      subTitle="Для подбора рецептов по продуктам необходим тариф ПРО"
-      btnTitle="Ок"
-      action={() => {
-        setIsTariffLimitMsg(false);
-      }}
-      isVisible={isTariffLimitMsg}
-    />
-  );
-
   return (
     <>
       {showLimitRequestsMsg}
-      {showTariffLimigMessage}
       <ActionBtn variant="icon" action={handleOpen}>
         <LuCookingPot className={classNames(styles.recipeIcon, styles.animate)} />
       </ActionBtn>

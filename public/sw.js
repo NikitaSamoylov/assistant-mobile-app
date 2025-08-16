@@ -1,4 +1,4 @@
-const CACHE_NAME = 'assistant-pro-cache-v2.11.0';
+const CACHE_NAME = 'my-friend-assistant-cache-v2.11.0';
 const urlsToCache = [
   '/auth',
   '/favicon.ico',
@@ -103,7 +103,7 @@ self.addEventListener('push', (event) => {
   const data = event.data ? event.data.json() : {};
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
-      const appUrl = 'assistant-pro.ru';
+      const appUrl = 'my-friend-assistant.ru';
       const appUrlLocal = 'localhost:3000';
 
       // Проверяем, есть ли активное окно с нужным URL
@@ -138,7 +138,7 @@ self.addEventListener('notificationclick', (event) => {
 
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
-      const appUrl = 'https://assistant-pro.ru';
+      const appUrl = 'my-friend-assistant.ru';
       let appClient = null;
 
       for (const client of clientList) {

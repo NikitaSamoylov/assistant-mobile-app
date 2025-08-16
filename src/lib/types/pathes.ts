@@ -9,7 +9,6 @@ export enum Pathes {
   MENU_LIST = '/menu-list',
   ACCOUNT = '/account',
   AI_CHAT = '/ai-chat',
-  TARIFF_PLAN = '/tariff-plan',
   FALLBACK = '/fallback',
   ABOUT = '/about',
   WEB_CAM = '/cam',

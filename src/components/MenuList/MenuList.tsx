@@ -13,7 +13,6 @@ import { useState } from "react";
 import { PopupNotification } from "../Popups/PopupNotification";
 import moment from "moment";
 import { setAiRequestCount } from "@/lib/store/features/aiRequestsCountSlice";
-import { TariffesTitles } from "@/lib/types/tariffes";
 import { setNoInternetMsg } from "@/lib/store/features/noInternetSlice";
 import { BiSolidGift } from "react-icons/bi";
 import styles from './MenuList.module.css';
@@ -22,12 +21,10 @@ export const MenuList = () => {
   const router = useRouter();
   const { isUserOnline } = useSelector((state: RootState) => state.isUserOnline);
   const requestsCount = useSelector((state: RootState) => state.aiRequestCountSlice.aiRequestCount);
-  const userTariff = useSelector((state: RootState) => state.userSession.userSession?.tariff);
 
   const dispatch = useDispatch();
 
   const [showLimitMessage, setShowLimitMessage] = useState(false);
-  const [isTariffLimitMsg, setIsTariffLimitMsg] = useState(false);
 
   const handleAccountRoute = () => {
     router.replace(Pathes.ACCOUNT);
@@ -36,10 +33,6 @@ export const MenuList = () => {
   const handleAiChatRoute = () => {
     if (!isUserOnline) {
       dispatch(setNoInternetMsg(true));
-      return;
-    };
-    if (userTariff === TariffesTitles.BASE_TARIFF) {
-      setIsTariffLimitMsg(true);
       return;
     };
 
@@ -76,22 +69,9 @@ export const MenuList = () => {
     />
   );
 
-  const showTariffLimigMessage = (
-    <PopupNotification
-      title="Необходим тариф"
-      subTitle="Для подбора рецептов по продуктам в наличии необходим тариф ПРО"
-      btnTitle="Ок"
-      action={() => {
-        setIsTariffLimitMsg(false);
-      }}
-      isVisible={isTariffLimitMsg}
-    />
-  );
-
   return (
     <FadeComponent isVisible={true} delay={0.4}>
       {showLimitRequestsMsg}
-      {showTariffLimigMessage}
       <div className={styles.title}>
         <TextField variant="p" color="main">
           Ещё

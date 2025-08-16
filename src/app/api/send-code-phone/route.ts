@@ -5,7 +5,7 @@ import { NextRequest } from 'next/server';
 export async function POST(request: NextRequest) {
   await connectDB();
 
-  const { phone, userName, timezone, expired } = await request.json();
+  const { phone, userName, timezone } = await request.json();
 
   const code = Math.floor(1000 + Math.random() * 9000).toString(); // 4 цифры
   const expires = new Date(Date.now() + 15 * 60 * 1000); // 15 минут
@@ -22,11 +22,7 @@ export async function POST(request: NextRequest) {
       verificationCode: code,
       verificationCodeExpires: expires,
       timezone,
-      expired,
-      tariff: 'фримиум',
       isLogged: true,
-      nextTariff: '',
-      isNextTariffPayed: false,
     });
   }
   await user.save();

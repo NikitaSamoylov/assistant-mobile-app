@@ -18,7 +18,6 @@ const pathesToHide = [
   Pathes.SUPPORT,
   Pathes.POLICY,
   Pathes.TERMS,
-  Pathes.TARIFF_PLAN,
   Pathes.FALLBACK,
   Pathes.ABOUT,
   Pathes.PROMO,

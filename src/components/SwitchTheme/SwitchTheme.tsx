@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FiSun } from "react-icons/fi";
 import { TextField } from '../TextField';
 import { IoMoonOutline } from "react-icons/io5";
@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/lib/store/store';
 import { setTheme, ThemeMode } from '@/lib/store/features/themeSlice';
 import classNames from 'classnames';
-import { TariffesTitles } from '@/lib/types/tariffes';
 import styles from './SwitchTheme.module.css';
 
 type TSwitchThemeProps = {
@@ -17,23 +16,12 @@ type TSwitchThemeProps = {
 
 export const SwitchTheme = ({ hideText }: TSwitchThemeProps) => {
   const themeMode = useSelector((state: RootState) => state.theme.theme);
-  const userTariff = useSelector((state: RootState) => state.userSession.userSession?.tariff);
 
   const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   if (themeMode === ThemeMode.DARK) {
-  //     document.body.classList.add('dark-theme');
-  //   } else {
-  //     document.body.classList.remove('dark-theme');
-  //   }
-  // }, [themeMode]);
 
   const toggleTheme = () => {
     dispatch(setTheme(themeMode === ThemeMode.LIGHT ? ThemeMode.DARK : ThemeMode.LIGHT));
   };
-
-  if (userTariff === TariffesTitles.BASE_TARIFF) return;
 
   return (
     <div>

@@ -26,7 +26,6 @@ const pathesToHideHeader = [
   Pathes.ACCOUNT,
   Pathes.VERIFY,
   Pathes.AI_CHAT,
-  Pathes.TARIFF_PLAN,
   Pathes.TERMS,
   Pathes.FALLBACK,
   Pathes.ABOUT,

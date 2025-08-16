@@ -10,12 +10,8 @@ const UserSchema = new mongoose.Schema({
   emailForChange: { type: String },
   phoneForChange: { type: String },
   timezone: { type: String },
-  expired: { type: String },
-  tariff: { type: String },
   timeToNotify: { type: String },
   isLogged: { type: Boolean },
-  nextTariff: { type: String },
-  isNextTariffPayed: { type: Boolean },
   pushSubscription: {
     endpoint: { type: String },
     expirationTime: { type: String },

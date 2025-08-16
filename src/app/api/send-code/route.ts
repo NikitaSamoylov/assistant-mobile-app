@@ -6,7 +6,7 @@ import { NextRequest } from 'next/server';
 export async function POST(request: NextRequest) {
   await connectDB();
 
-  const { email, userName, timezone, expired } = await request.json();
+  const { email, userName, timezone } = await request.json();
 
   let code: string;
   let expires: Date;
@@ -35,11 +35,7 @@ export async function POST(request: NextRequest) {
       verificationCode: code,
       verificationCodeExpires: expires,
       timezone,
-      expired,
-      tariff: 'фримиум',
       isLogged: true,
-      nextTariff: '',
-      isNextTariffPayed: false,
     });
   }
   await user.save();

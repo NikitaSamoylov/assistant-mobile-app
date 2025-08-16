@@ -9,7 +9,6 @@ import { ChangeUserEmail } from "./ChangeUserEmail";
 import { ChangeUserName } from "./ChangeUserName";
 import { FaUser } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { BsSubstack } from "react-icons/bs";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import { OfferNewFeature } from "./OfferNewFeature";
 import { BsQuestionCircleFill } from "react-icons/bs";
@@ -26,9 +25,6 @@ import { Push } from "./Push";
 import { ReturnBtn } from "@/components/Buttons/ReturnBtn";
 import { useRouter } from "next/navigation";
 import { Pathes } from "@/lib/types/pathes";
-import { TariffPlanBtn } from "./TariffPlanBtn";
-import { TariffesTitles } from "@/lib/types/tariffes";
-import { compareTariffDate } from "./TariffPlanBtn/compareTariffDate";
 import { LinkToTerms } from "./LinkToTerms";
 import { TimeSelect } from "./TimeSelect";
 import { FcClock } from "react-icons/fc";
@@ -38,8 +34,6 @@ import styles from './Account.module.css';
 
 export const Account = () => {
   const { userSession } = useSelector((state: RootState) => state.userSession);
-  const userTariff = useSelector((state: RootState) => state.userSession.userSession?.tariff);
-  const tariffExpiredDate = useSelector((state: RootState) => state.userSession.userSession?.expired);
 
   const router = useRouter();
 
@@ -130,17 +124,6 @@ export const Account = () => {
             Тариф
           </TextField>
         </div> */}
-        {/* <ul className={styles.list}>
-          <li className={classNames(styles.item, styles.subscription)}>
-            <div className={styles.itemContent}>
-              <BsSubstack className={classNames(styles.icon, styles.iconUserSubscr)} />
-              <TextField variant="p" color="main">
-                {userTariff === TariffesTitles.FREEMIUM ? 'Пробный' : userTariff}{tariffExpiredDate && `, ${compareTariffDate(tariffExpiredDate)}`}
-              </TextField>
-            </div>
-            <TariffPlanBtn />
-          </li>
-        </ul> */}
         {/* Обратная связь  */}
         <div className={styles.subTitle}>
           <TextField variant="p" color="caption">

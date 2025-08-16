@@ -29,7 +29,6 @@ import { setAuthData } from '@/lib/store/features/authData';
 import styles from './RegisterFormEmail.module.css';
 
 const schema = yup.object().shape({
-  // userName: yup.string().required('введите имя'),
   email: yup.string().email('Email не валиден').required('введите email'),
 });
 
@@ -42,7 +41,6 @@ export const RegisterFormEmail = () => {
   const methods = useForm<{ email: string }>({
     resolver,
     defaultValues: {
-      // userName: '',
       email: '',
     },
   });
@@ -87,11 +85,9 @@ export const RegisterFormEmail = () => {
     };
 
     const dto = {
-      // userName: data?.userName?.trim(),
       userName: 'Пользователь',
       email: data?.email?.toLowerCase().trim(),
       timezone: moment.tz.guess(),
-      expired: moment().add(14, 'days').format('DD.MM.YYYY'),
     };
 
     fetch('/api/send-code', {
@@ -123,9 +119,6 @@ export const RegisterFormEmail = () => {
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit as any)} className={styles.form}>
           <ul className={styles.fieldsList}>
-            {/* <li className={styles.fieldItem}>
-              <ControlledTextField name="userName" placeholder="Имя" />
-            </li> */}
             <li className={styles.fieldItem}>
               <ControlledTextField name="email" placeholder="Email" />
             </li>

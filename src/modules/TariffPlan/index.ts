@@ -1,1 +1,0 @@
-export { TariffPlan } from './TariffPlan';

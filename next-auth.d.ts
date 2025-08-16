@@ -7,12 +7,10 @@ declare module 'next-auth' {
       email: string;
       phone: string;
       userName: string;
-      expired: string;
     } & DefaultSession["user"];
   }
   interface User {
     userName?: string;
-    expired?: string;
     phone?: string;
   }
 }

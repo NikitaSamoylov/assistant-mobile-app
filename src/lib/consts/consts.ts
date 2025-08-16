@@ -13,6 +13,6 @@ export const CREATE_PRODUCTS_LIMIT = 80;
 export const LIMIT = 140;
 
 //support link
-export const SUPPORT_LINK = 'https://assistant-pro.ru/support';
-export const SENDER_EMAIL = 'send@assistant-pro.ru';
+export const SUPPORT_LINK = 'https://my-friend-assistant.ru/support';
+export const SENDER_EMAIL = 'send@my-friend-assistant.ru';
 export const SUPPORT_EMAIL = 'nsam7655@gmail.com'

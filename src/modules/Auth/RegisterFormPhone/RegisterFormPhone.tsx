@@ -30,7 +30,6 @@ import { ControlledTextPhone } from '@/components/ControlledInputs/ControlledTex
 import styles from './RegisterFormPhone.module.css';
 
 const schema = yup.object().shape({
-  // userName: yup.string().required('введите имя'),
   phone: yup.string()
     .matches(/^\+?\d+$/, 'введите только цифры')
     .required('введите телефон'),
@@ -45,7 +44,6 @@ export const RegisterFormPhone = () => {
   const methods = useForm<{ phone: string }>({
     resolver,
     defaultValues: {
-      // userName: '',
       phone: '',
     },
   });
@@ -92,11 +90,9 @@ export const RegisterFormPhone = () => {
     const preparedNewPhone = 7 + data?.phone?.split('').splice(2).join('').trim();
 
     const dto = {
-      // userName: data?.userName?.trim(),
       userName: 'Пользователь',
       phone: preparedNewPhone,
       timezone: moment.tz.guess(),
-      expired: moment().add(14, 'days').format('DD.MM.YYYY'),
     };
 
     fetch('/api/send-code-phone', {
@@ -128,9 +124,6 @@ export const RegisterFormPhone = () => {
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit as any)} className={styles.form}>
           <ul className={styles.fieldsList}>
-            {/* <li className={styles.fieldItem}>
-              <ControlledTextField name="userName" placeholder="Имя" />
-            </li> */}
             <li className={styles.fieldItem}>
               <ControlledTextPhone
                 name="phone"
