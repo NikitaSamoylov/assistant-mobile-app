@@ -26,9 +26,9 @@ export const About = () => {
     <>
       <div className={styles.promoWrapper}>
         <iframe
-          // src="https://assistant-pro-promo.vercel.app"
+          src="https://assistant-pro-promo.vercel.app"
           // src="https://дворецкий.site"
-          src="https://cu18353.tw1.ru/"
+          // src="https://cu18353.tw1.ru/"
           className={classNames(styles.iframe, isMobile() ? styles.isMobileHeight : styles.isDesktopHeight)}
           title="Дворецкий сайт"
         />
